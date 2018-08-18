@@ -27,7 +27,7 @@ export default class Icofont extends Component {
             flipAmount = totalFlip;
         }
         // Handle ClassName
-        let cName = className?`${className} `:"";
+        const cName = className?`${className} `:"";
         // Render
         return (
             <i {...restOfProps} 

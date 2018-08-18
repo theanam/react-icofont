@@ -1,0 +1,39 @@
+{
+    "name": "react-icofont",
+    "version": "0.0.1",
+    "description": "React wrapper for icofont probect by JomShaper",
+    "main": "build/index.js",
+    "peerDependencies": {
+        "react": "^15.5.4"
+    },
+    "dependencies": {
+        "react": "^15.5.4",
+        "webpack": "^2.6.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack --watch",
+        "build": "webpack"
+    },
+    "author": {
+        "name": "Anam Ahmed",
+        "email": "anam.ahmed.a@gmail.com"
+    },
+    "homepage": "https://github.com/theanam/react-icofont",
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-core": "^6.24.1",
+        "babel-loader": "^7.0.0",
+        "babel-plugin-transform-object-rest-spread": "^6.23.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "css-loader": "^1.0.0",
+        "url-loader": "^1.1.1",
+        "style-loader": "^0.22.1"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/theanam/react-icofont.git"
+    }
+}

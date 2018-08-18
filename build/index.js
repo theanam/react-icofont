@@ -168,10 +168,30 @@ var Icofont = function (_Component) {
         value: function render() {
             var _props = this.props,
                 icon = _props.icon,
-                restOfProps = _objectWithoutProperties(_props, ['icon']);
+                size = _props.size,
+                rotate = _props.rotate,
+                flip = _props.flip,
+                restOfProps = _objectWithoutProperties(_props, ['icon', 'size', 'rotate', 'flip']);
 
+            var totalRotate = rotate ? ' icofont-rotate-' + rotate : "";
+            var totalSize = size ? ' icofont-' + size + 'x' : "";
+            var flipAmount = "";
+            if (flip) {
+                var flips = flip.split(" ");
+                var totalFlip = "";
+                if (flips.indexOf("h") != -1 || flip.indexOf("horizontal") != -1) {
+                    totalFlip += " icofont-flip-horizontal";
+                }
+                if (flips.indexOf("v") != -1 || flips.indexOf("vertical") != -1) {
+                    totalFlip += " icofont-flip-vertical";
+                }
+                if (totalFlip === "") {
+                    console.warn("Flip value Invalid for IcoFont");
+                }
+                flipAmount = totalFlip;
+            }
             if (!this.props.icon) return null;
-            return _react2.default.createElement('i', _extends({}, restOfProps, { className: 'icofont-' + this.props.icon }));
+            return _react2.default.createElement('i', _extends({}, restOfProps, { className: 'icofont-' + this.props.icon + totalRotate + totalSize + flipAmount }));
         }
     }]);
 

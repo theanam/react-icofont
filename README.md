@@ -1,4 +1,4 @@
-## React wrapper for the icofont project from JomShaper
+## React wrapper for the icofont project from JoomShaper
 
 A React wrapper for the icofont project <https://icofont.com/>. It renders a `<i>` tag with icofont classes (like how you'd usually use it). No extra configuration required.
 

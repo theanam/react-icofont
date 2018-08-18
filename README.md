@@ -26,15 +26,19 @@ Icofont supports Rotate, flip and size classes. In this component you can pass t
 
 Supported values for the props are given below :
 
-**Rotate**:
+**Icon** (Required): 
+
+Any valid icon name from the icofont website (<https://icofont.com/icons>).
+Guess what, if you copy the class name that includes the prefix (`icofont-`), it will also work fine.
+**Rotate** (Optional):
 
  Currently rotate angles `90`,`180`,`270` values are supported. The rotate angle values are in *degree*.
 
-**Flip**: 
+**Flip** (Optional): 
 
 `horizontal` or `h` and `vertical` or `v`. You can also do, `flip="h v"` or `flip="horizontal vertical"` for flipping both horizontally and vertically.
 
-**Size**:
+**Size** (Optional):
 
 Size can have value from `1` to `10`. For example, setting `size="2"` will make the icon twice as big.
 

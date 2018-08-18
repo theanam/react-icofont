@@ -4,6 +4,8 @@ export default class Icofont extends Component {
     render() {
         if (!this.props.icon || typeof this.props.icon!='string') return null;
         const { icon,size,rotate,flip,className, ...restOfProps } = this.props;
+        // Look for prefix in icon. Don't prefix it if it's already prefixed
+        let iconValue = icon.match(/^icofont\-/)?icon:`icofont-${icon}`;
         // Manage Rotate Value
         const totalRotate = rotate?` icofont-rotate-${rotate}`:"";
         // Manage Size value
@@ -32,7 +34,7 @@ export default class Icofont extends Component {
         // Render
         return (
             <i {...restOfProps} 
-            className={`${cName}icofont-${this.props.icon}${totalRotate}${totalSize}${flipAmount}`}></i>
+            className={`${cName}${iconValue}${totalRotate}${totalSize}${flipAmount}`}></i>
         )
     }
 }

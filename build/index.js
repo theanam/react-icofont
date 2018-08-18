@@ -175,9 +175,11 @@ var Icofont = function (_Component) {
                 flip = _props.flip,
                 className = _props.className,
                 restOfProps = _objectWithoutProperties(_props, ['icon', 'size', 'rotate', 'flip', 'className']);
+            // Look for prefix in icon. Don't prefix it if it's already prefixed
+
+
+            var iconValue = icon.match(/^icofont\-/) ? icon : 'icofont-' + icon;
             // Manage Rotate Value
-
-
             var totalRotate = rotate ? ' icofont-rotate-' + rotate : "";
             // Manage Size value
             var totalSize = size ? ' icofont-' + size + 'x' : "";
@@ -204,7 +206,7 @@ var Icofont = function (_Component) {
             }
             // Render
             return _react2.default.createElement('i', _extends({}, restOfProps, {
-                className: cName + 'icofont-' + this.props.icon + totalRotate + totalSize + flipAmount }));
+                className: '' + cName + iconValue + totalRotate + totalSize + flipAmount }));
         }
     }]);
 

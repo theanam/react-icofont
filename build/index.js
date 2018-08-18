@@ -200,10 +200,7 @@ var Icofont = function (_Component) {
                 flipAmount = totalFlip;
             }
             // Handle ClassName
-            var cName = "";
-            if (className) {
-                cName = className + ' ';
-            }
+            var cName = className ? className + ' ' : "";
             // Render
             return _react2.default.createElement('i', _extends({}, restOfProps, {
                 className: '' + cName + iconValue + totalRotate + totalSize + flipAmount }));

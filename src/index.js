@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import './icofont/icofont.min.css';
 export default class Icofont extends Component {
     render() {
-        const { icon,size,rotate,flip, ...restOfProps } = this.props;
+        if (!this.props.icon || typeof this.props.icon!='string') return null;
+        const { icon,size,rotate,flip,className, ...restOfProps } = this.props;
+        // Manage Rotate Value
         const totalRotate = rotate?` icofont-rotate-${rotate}`:"";
+        // Manage Size value
         const totalSize = size?` icofont-${size}x`:"";
+        // Manage Flip
         let flipAmount = "";
         if(flip){
             let flips = flip.split(" ");
@@ -20,9 +24,15 @@ export default class Icofont extends Component {
             }
             flipAmount = totalFlip;
         }
-        if (!this.props.icon) return null;
+        // Handle ClassName
+        let cName = "";
+        if(className){
+            cName=`${className} `;
+        }
+        // Render
         return (
-            <i {...restOfProps} className={`icofont-${this.props.icon}${totalRotate}${totalSize}${flipAmount}`}></i>
+            <i {...restOfProps} 
+            className={`${cName}icofont-${this.props.icon}${totalRotate}${totalSize}${flipAmount}`}></i>
         )
     }
 }

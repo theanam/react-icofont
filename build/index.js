@@ -166,15 +166,22 @@ var Icofont = function (_Component) {
     _createClass(Icofont, [{
         key: 'render',
         value: function render() {
+            if (!this.props.icon || typeof this.props.icon != 'string') return null;
+
             var _props = this.props,
                 icon = _props.icon,
                 size = _props.size,
                 rotate = _props.rotate,
                 flip = _props.flip,
-                restOfProps = _objectWithoutProperties(_props, ['icon', 'size', 'rotate', 'flip']);
+                className = _props.className,
+                restOfProps = _objectWithoutProperties(_props, ['icon', 'size', 'rotate', 'flip', 'className']);
+            // Manage Rotate Value
+
 
             var totalRotate = rotate ? ' icofont-rotate-' + rotate : "";
+            // Manage Size value
             var totalSize = size ? ' icofont-' + size + 'x' : "";
+            // Manage Flip
             var flipAmount = "";
             if (flip) {
                 var flips = flip.split(" ");
@@ -190,8 +197,14 @@ var Icofont = function (_Component) {
                 }
                 flipAmount = totalFlip;
             }
-            if (!this.props.icon) return null;
-            return _react2.default.createElement('i', _extends({}, restOfProps, { className: 'icofont-' + this.props.icon + totalRotate + totalSize + flipAmount }));
+            // Handle ClassName
+            var cName = "";
+            if (className) {
+                cName = className + ' ';
+            }
+            // Render
+            return _react2.default.createElement('i', _extends({}, restOfProps, {
+                className: cName + 'icofont-' + this.props.icon + totalRotate + totalSize + flipAmount }));
         }
     }]);
 

@@ -36,9 +36,10 @@ Supported values for the props are given below :
 
 **Size**:
 
-Size can have value from `1` to `10`. Setting `size="2"` will make the icon twice as big.
+Size can have value from `1` to `10`. For example, setting `size="2"` will make the icon twice as big.
 
-You can read more about these classes here: <https://icofont.com/examples>
+
+You can read more about these here: <https://icofont.com/examples>
 
 #### Standard Props Support: 
 

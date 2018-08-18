@@ -1,7 +1,7 @@
 {
     "name": "react-icofont",
     "version": "0.0.1",
-    "description": "React wrapper for icofont probect by JomShaper",
+    "description": "React wrapper for icofont project",
     "main": "build/index.js",
     "peerDependencies": {
         "react": "^15.5.4"

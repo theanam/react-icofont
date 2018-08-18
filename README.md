@@ -30,6 +30,7 @@ Supported values for the props are given below :
 
 Any valid icon name from the icofont website (<https://icofont.com/icons>).
 Guess what, if you copy the class name that includes the prefix (`icofont-`), it will also work fine.
+
 **Rotate** (Optional):
 
  Currently rotate angles `90`,`180`,`270` values are supported. The rotate angle values are in *degree*.

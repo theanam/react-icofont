@@ -1,17 +1,16 @@
 {
     "name": "react-icofont",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "React wrapper for icofont project (https://icofont.com/)",
     "main": "build/index.js",
     "peerDependencies": {
-        "react": "^15.5.4"
+        "react": "^16"
     },
     "dependencies": {
-        "react": "^15.5.4",
-        "webpack": "^2.6.1"
+        "react": "^16.8",
+        "webpack": "^2.6"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack --watch",
         "build": "webpack"
     },
@@ -27,9 +26,9 @@
         "babel-plugin-transform-object-rest-spread": "^6.23.0",
         "babel-plugin-transform-react-jsx": "^6.24.1",
         "babel-preset-env": "^1.5.1",
-        "css-loader": "^1.0.0",
-        "url-loader": "^1.1.1",
-        "style-loader": "^0.22.1"
+        "css-loader": "^1.0.1",
+        "style-loader": "^0.22.1",
+        "url-loader": "^1.1.2"
     },
     "license": "MIT",
     "repository": {

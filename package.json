@@ -4,7 +4,7 @@
     "description": "React wrapper for icofont project (https://icofont.com/)",
     "main": "build/index.js",
     "peerDependencies": {
-        "react": "^16.8"
+        "react": "^16"
     },
     "dependencies": {
         "react": "^16.8",

@@ -43,6 +43,11 @@ Guess what, if you copy the class name that includes the prefix (`icofont-`), it
 
 Size can have value from `1` to `10`. For example, setting `size="2"` will make the icon twice as big.
 
+**spin** (Optional):
+
+Spin can have boolean value like `1/0` or `true/false` or even `TRUE/FALSE`. In the case of true value, the icon will spin endlessly. You can spin any icon:
+
+    <Icofont icon="spinner" size="3" spin="true"/>
 
 You can read more about these here: <https://icofont.com/examples>
 

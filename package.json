@@ -1,6 +1,6 @@
 {
     "name": "react-icofont",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "React wrapper for icofont project (https://icofont.com/)",
     "main": "build/index.js",
     "peerDependencies": {

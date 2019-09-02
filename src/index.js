@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './icofont/icofont.min.css';
 export default class Icofont extends Component {
-    getBoolean(val){
-        var num = +val;
-        return !isNaN(num) ? !!num : !!String(val).toLowerCase().replace(!!0,'');
-    }
     render() {
         if (!this.props.icon || typeof this.props.icon!='string') return null;
         const { icon,size,rotate,flip,className,spin, ...restOfProps } = this.props;
@@ -33,7 +29,7 @@ export default class Icofont extends Component {
         // Handle ClassName
         const cName = className?`${className} `:"";
         // Manage Spin value
-        const totalSpin = spin&&this.getBoolean(spin)?` icofont-spin`:"";
+        const totalSpin = (["true","TRUE","1","yes"].indexOf(spin)!==-1)?"icofont-spin":"";
         // Render
         return (
             <i {...restOfProps}

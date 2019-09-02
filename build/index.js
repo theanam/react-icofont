@@ -203,7 +203,7 @@ var Icofont = function (_Component) {
             // Handle ClassName
             var cName = className ? className + ' ' : "";
             // Manage Spin value
-            var totalSpin = ["true", "TRUE", "1", "yes"].indexOf(spin) !== -1 ? "icofont-spin" : "";
+            var totalSpin = ["true", "TRUE", "1", "yes"].indexOf(spin) !== -1 ? " icofont-spin" : "";
             // Render
             return _react2.default.createElement('i', _extends({}, restOfProps, {
                 className: '' + cName + iconValue + totalRotate + totalSize + flipAmount + totalSpin }));

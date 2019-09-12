@@ -29,7 +29,7 @@ export default class Icofont extends Component {
         // Handle ClassName
         const cName = className?`${className} `:"";
         // Manage Spin value
-        const totalSpin = (spin&&["true", "1", "yes"].includes(spin.toLocaleLowerCase().toString()))?" icofont-spin":"";
+        const totalSpin = (spin&&["true", "1", "yes"].includes(spin.toString().toLocaleLowerCase()))?" icofont-spin":"";
         // Render
         return (
             <i {...restOfProps}

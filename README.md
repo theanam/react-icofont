@@ -1,5 +1,7 @@
 ## React wrapper for the icofont project from JoomShaper
 
+[![NPM](https://nodei.co/npm/react-icofont.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-icofont/)
+
 A React wrapper for the icofont project <https://icofont.com/>. It renders a `<i>` tag with icofont classes (like how you'd usually use it). No extra configuration required.
 
 #### prerequisite:
